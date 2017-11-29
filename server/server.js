@@ -1,11 +1,12 @@
 import express from 'express';
-import articles from './articles.json';
+import RSSParser from './rss/rss-parser';
 
 let app = express();
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/api/news', (req,res) =>{
+app.get('/api/news', async (req,res) =>{
+    let articles = await RSSParser.getArticles();
     res.send(articles);
 });
 

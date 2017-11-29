@@ -23,6 +23,8 @@
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
     "react-router": "^2.6.1",
+    "rss-parser": "^2.10.8",
+    "rss-to-json": "^1.0.3",
     "style-loader": "^0.18.2",
     "webpack": "^3.8.1"
   },
