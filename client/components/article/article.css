@@ -1,0 +1,45 @@
+.article {
+  border: 1px solid #eee;
+  clear: both;
+  margin: 15px 0px 15px 0px;
+  height: 130px;
+  background: white;
+  box-shadow:0 1px 3px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.04);
+
+  &:first-child{
+      margin-top:0px;
+  }
+
+  & .article-content {
+    float: left;
+    padding-bottom: 5px !important;
+    padding:15px;
+  }
+
+  & .article-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  & .article-image {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    overflow:hidden;
+
+    & img{
+        height:100%;
+    }
+  }
+
+  & .article-subtitle {
+    text-align: left;
+    margin-top: 5px;
+    color: lightgrey;
+  }
+
+  & .article-source {
+    padding-right: 15px;
+  }
+}
