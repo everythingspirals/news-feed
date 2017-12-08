@@ -1,27 +1,47 @@
 [
     {
+        "name": "IEEE Spectrum",
+        "category": "All",
+        "url": "https://spectrum.ieee.org/rss/fulltext"
+    },
+    {
+        "name": "IEEE Spectrum",
+        "category": "Videos",
+        "url": "https://spectrum.ieee.org/rss/videos"
+    },
+    {
+        "name": "IEEE Spectrum",
+        "category": "Computing",
+        "url": "https://spectrum.ieee.org/rss/computing/fulltext"
+    },
+    {
+        "name": "IEEE Spectrum",
+        "category": "Robotics",
+        "url": "https://spectrum.ieee.org/rss/robotics/fulltext"
+    },
+    {
+        "name": "IEEE Spectrum",
+        "category": "Gadgets",
+        "url": "https://spectrum.ieee.org/rss/consumer-electronics/fulltext"
+    },
+    {
         "name": "The Verge",
-        "category": "Technology",
+        "category": "Gadgets",
         "url": "https://www.theverge.com/rss/index.xml"
     },
     {
-        "name": "CoinTelegraph",
-        "category": "Cryptocurrency",
-        "url": "https://cointelegraph.com/rss"
+        "name": "IEEE Spectrum",
+        "category": "At Work",
+        "url": "https://spectrum.ieee.org/rss/at-work/fulltext"
     },
     {
-        "name": "Reuters",
-        "category": "World",
-        "url": "http://feeds.reuters.com/Reuters/worldNews"
+        "name": "IEEE Spectrum",
+        "category": "Green Tech",
+        "url": "https://spectrum.ieee.org/rss/green-tech/fulltext"
     },
     {
-        "name": "Polygon",
-        "category": "Video Games",
-        "url": "https://www.polygon.com/rss/index.xml"
-    },
-    {
-        "name": "vTools IEEE",
-        "category": "IEEE",
-        "url": "https://meetings.vtools.ieee.org/meetings/rss"
+        "name": "IEEE Spectrum",
+        "category": "Semiconductors",
+        "url": "https://spectrum.ieee.org/rss/semiconductors/fulltext"
     }
 ]

@@ -18,7 +18,7 @@ class Article extends React.Component {
         title = title.length > 100 ? (title.slice(0, 100) + '...') : title;
 
         return (
-            <div className='article'>
+            <article className='article'>
                 {/* <div className={'article-image'}>
                     <img src={article.img || article.source.icon} />
                 </div> */}
@@ -33,7 +33,7 @@ class Article extends React.Component {
                  
                     </div>
                 </div>
-            </div>
+            </article>
         );
     }
 }

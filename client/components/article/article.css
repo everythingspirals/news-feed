@@ -14,12 +14,11 @@
   }
 
   & .article-description{
-    padding-top:5px;
+    padding-top:10px;
   }
 
   & .article-title {
     font-size: 18px;
-    margin-bottom: 10px;
   }
 
   & .article-image {
@@ -34,9 +33,10 @@
     }
   }
 
+  & img{
+    width:100%;
+  }
   & .article-subtitle {
-    text-align: left;
-    margin-top: 5px;
     color: lightgrey;
   }
 

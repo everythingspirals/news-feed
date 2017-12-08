@@ -75,6 +75,7 @@ class News extends React.Component {
         return (
 
             <div className='news'>
+                
                 <nav className="navbar navbar-expand-lg navbar-light bg-light filter">
                     <span className="navbar-brand" href="#">Filter</span>
                     <div className="collapse navbar-collapse">
