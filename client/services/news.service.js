@@ -2,7 +2,7 @@ import axios from 'axios';
 
 class NewsService {
     static async getNews(category, filter) {
-        let request = await axios.get('http://localhost:3000/api/news', {
+        let request = await axios.get('/api/news', {
             params: {
                 filter: filter,
                 category: category
