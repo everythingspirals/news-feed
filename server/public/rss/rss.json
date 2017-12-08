@@ -1,0 +1,27 @@
+[
+    {
+        "name": "The Verge",
+        "category": "Technology",
+        "url": "https://www.theverge.com/rss/index.xml"
+    },
+    {
+        "name": "CoinTelegraph",
+        "category": "Cryptocurrency",
+        "url": "https://cointelegraph.com/rss"
+    },
+    {
+        "name": "Reuters",
+        "category": "World",
+        "url": "http://feeds.reuters.com/Reuters/worldNews"
+    },
+    {
+        "name": "Polygon",
+        "category": "Video Games",
+        "url": "https://www.polygon.com/rss/index.xml"
+    },
+    {
+        "name": "vTools IEEE",
+        "category": "IEEE",
+        "url": "https://meetings.vtools.ieee.org/meetings/rss"
+    }
+]

@@ -19,9 +19,9 @@ class Article extends React.Component {
 
         return (
             <div className='article'>
-                <div className={'article-image'}>
+                {/* <div className={'article-image'}>
                     <img src={article.img || article.source.icon} />
-                </div>
+                </div> */}
                 <div className='article-content'>
                     <div className='article-title'>
                         <a href={article.url} target='_blank'>{title}</a>
@@ -29,6 +29,9 @@ class Article extends React.Component {
                     <div className='article-subtitle'>
                         <span className="article-source">{article.source.name}</span>
                         <span className="article-date">{date}</span></div>
+                    <div className='article-description' dangerouslySetInnerHTML={{ __html: article.content }}>
+                 
+                    </div>
                 </div>
             </div>
         );

@@ -2,6 +2,7 @@
 
 const path = require('path');
 const postcssNested = require('postcss-nested');
+const publicPath = path.join(__dirname, './server/public');
 
 module.exports = {
     name: 'client',
@@ -11,7 +12,7 @@ module.exports = {
     entry: ['./client/app.js'],
 
     output: {
-        path: path.join(__dirname, './server/public'),
+        path: publicPath,
         publicPath: '/',
         filename: 'js/client.js'
     },
@@ -50,6 +51,12 @@ module.exports = {
     ],
 
     devtool: 'eval',
+
+    devServer: {
+        contentBase: publicPath,
+        compress: true,
+        port: 9000
+    },
 
     resolve: {
         extensions: ['.js', '.jsx'],

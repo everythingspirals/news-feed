@@ -1,34 +1,47 @@
-import sources from './rss.json';
+import sources from '../public/rss/rss.json';
 import parser from 'rss-parser';
+import moment from 'moment';
 
 class RSSParser {
 
-    static async getArticles() {
+    static async getArticles(category, page) {
         let articles = [];
 
         await Promise.all(sources.map(async (source) => {
-            return new Promise((resolve, reject) => {
-                parser.parseURL(source.url, (err, rss) => {
-                    rss.feed.entries.map(article => {
-                        articles.push({
-                            title: article.title,
-                            img: article.enclosure.url,
-                            category: source.category,
-                            source: {
-                                name: source.name,
-                                icon: ''
-                            },
-                            date: article.pubDate
+            if (source.category === category || category === 'All') {
+                return new Promise((resolve, reject) => {
+                    let url = source.url + "?page=" + page;
+                    console.log(url)
+                    parser.parseURL(url, (err, rss) => {
+                        rss.feed.entries.map(article => {
+                            articles.push(this.parseArticle(article, source));
                         });
+                        resolve();
                     });
-                    resolve();
                 });
-            });
-
-            console.log(articles.length);
+            }
         }));
 
+        articles = articles.sort((a, b) => {
+            return moment(b.date) - moment(a.date);
+        });
+
         return articles;
+    }
+
+    static parseArticle(article, source) {
+        return {
+            title: article.title,
+            img: (article.enclosure && article.enclosure.url) || '',
+            category: source.category,
+            url: article.link,
+            content: article.contentSnippet,
+            source: {
+                name: source.name,
+                icon: ''
+            },
+            date: article.pubDate
+        }
     }
 }
 
