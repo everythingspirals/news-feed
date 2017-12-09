@@ -88,7 +88,7 @@ class Categories extends React.Component {
                     <div className="card-header">
                         Current Sources
                     </div>
-                    <table className='table table-bordered'>
+                    <table className='table table-responsive table-bordered'>
                         <thead className="thead-light">
                             <tr >
                                 <th>Name</th>
