@@ -17,7 +17,6 @@ class RSSParser {
             });
         });
 
-        console.log(sources);
         //Create a promise for each request to fufill concurrently
         await Promise.all(sources.map(async (source) => {
             if (source.category === category) {
